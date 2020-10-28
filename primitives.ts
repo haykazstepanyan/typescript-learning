@@ -26,4 +26,14 @@ const genericType: Array<number> = [1, 2, 4, 8]; //array generic type
 //tuples
 const arr: [number, string] = [10, 'Hello'];
 arr[0] = 15;
+
+//never
+function showMessage(message: string): never {
+  // never means that the end of the function will never be reached
+  throw new Error('Something went wrong');
+  // while (true) { }
+  // console.log(message);
+}
+
+
 }
